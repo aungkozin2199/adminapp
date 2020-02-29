@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:id="@+id/catgclsbut"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="X"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:background="@color/colorRed"/>
+    <EditText
+        android:id="@+id/catg"
+        android:layout_margin="50dp"
+        android:layout_below="@id/catgclsbut"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:hint="Category Name"
+        android:background="@drawable/border"
+        android:textColor="@color/colorText"/>
+    <Button
+        android:id="@+id/catgsavebut"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@color/colorGreen"
+        android:layout_below="@id/catg"
+        android:layout_marginLeft="50dp"
+        android:text="Save"/>
+    <Button
+        android:id="@+id/catgcancelbut"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@color/colorRed"
+        android:text="Cancel"
+        android:layout_below="@id/catg"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/catgsavebut"/>
+</RelativeLayout>

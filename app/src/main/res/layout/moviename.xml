@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+
+        android:id="@+id/moviecls"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="X"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:background="@color/colorRed"/>
+    <EditText
+        android:id="@+id/movie_name"
+        android:layout_margin="10dp"
+        android:layout_below="@id/moviecls"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:hint="Movie Name"
+        android:background="@drawable/border"
+        android:textColor="@color/colorText"/>
+    <EditText
+        android:id="@+id/movieimg_link"
+        android:layout_margin="10dp"
+        android:layout_below="@id/movie_name"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:hint="Movie Image Link "
+        android:background="@drawable/border"
+        android:textColor="@color/colorText"/>
+    <EditText
+        android:id="@+id/movie_link"
+        android:layout_margin="10dp"
+        android:layout_below="@id/movieimg_link"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:hint="Movie video Link "
+        android:background="@drawable/border"
+        android:textColor="@color/colorText"/>
+    <Spinner
+
+        android:layout_margin="10dp"
+        android:id="@+id/series_spinner"
+        android:background="@drawable/borderspin"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/movie_link"/>
+    <Spinner
+        android:layout_margin="10dp"
+        android:id="@+id/spinner2"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:background="@drawable/borderspin"
+        android:layout_below="@id/series_spinner"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/savebutt"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@color/colorGreen"
+        android:layout_below="@id/spinner2"
+        android:layout_marginLeft="50dp"
+        android:text="Save"/>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/spinner2"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/savebutt"
+        android:background="@color/colorRed"
+        android:text="Cancel" />
+</RelativeLayout>

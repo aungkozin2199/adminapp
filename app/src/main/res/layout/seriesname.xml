@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+
+        android:id="@+id/seriesclsbut"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="X"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:background="@color/colorRed"/>
+    <EditText
+        android:id="@+id/series_name"
+        android:layout_margin="10dp"
+        android:layout_below="@id/seriesclsbut"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:hint="Series Name"
+        android:background="@drawable/border"
+        android:textColor="@color/colorText"/>
+    <EditText
+        android:id="@+id/seriesimg_link"
+        android:layout_margin="10dp"
+        android:layout_below="@id/series_name"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:hint="Series Image Link "
+        android:background="@drawable/border"
+        android:textColor="@color/colorText"/>
+    <EditText
+        android:id="@+id/series_link"
+        android:layout_margin="10dp"
+        android:layout_below="@id/seriesimg_link"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:hint="Series video Link "
+        android:background="@drawable/border"
+        android:textColor="@color/colorText"/>
+    <Spinner
+        android:layout_margin="10dp"
+        android:id="@+id/series_spinner"
+        android:background="@drawable/borderspin"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/series_link"/>
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/series_save"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@color/colorGreen"
+        android:layout_below="@id/series_spinner"
+        android:layout_marginLeft="50dp"
+        android:text="Save"/>
+    <Button
+        android:id="@+id/series_cancel"
+        android:layout_margin="10dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@color/colorRed"
+        android:text="Cancel"
+        android:layout_below="@id/series_spinner"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/series_save"/>
+</RelativeLayout>
